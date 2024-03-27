@@ -16,12 +16,21 @@ function librairie_JQuery() {
 add_action( 'wp_enqueue_scripts', 'librairie_JQuery' );
 
 
+/* Chargement des script JS du theme */
+function script_JS_Custo() {
+
+    // Gestion de la Modale (script JQuery)
+    wp_enqueue_script('ModaleJS', get_stylesheet_directory_uri() . '/assets/js/modalePopupContact.js', array('jquery'), '1.0.0', true);
+
+}
+add_action( 'wp_enqueue_scripts', 'script_JS_Custo' );
+
 function enregistrement_nav_menus() {
 
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primaire', '' ),
-			'menu-2' => esc_html__( 'Secondaire', '' ),
+			'menu-1' => esc_html__( 'Primaire', 'nathaliemota' ),
+			'menu-2' => esc_html__( 'Secondaire', 'nathaliemota' ),
 		)
 	);
 }
