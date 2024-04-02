@@ -577,7 +577,7 @@ h1 {
   display: block;
 }
 
-.selecteurK {
+.infoPhotos {
   width: 50%;
   text-align: left;
   border-bottom: solid black 1px;
@@ -589,12 +589,12 @@ h1 {
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 820px) {
-  .selecteurK {
+  .infoPhotos {
     width: 100%;
     left: 10px;
     position: relative;
   }
-  .selecteurK h2 {
+  .infoPhotos h2 {
     width: 262px;
     height: 96px;
   }
