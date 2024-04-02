@@ -21,6 +21,8 @@ function script_JS_Custo() {
 
     // Gestion de la Modale (script JQuery)
     wp_enqueue_script('ModaleJS', get_stylesheet_directory_uri() . '/assets/js/modalePopupContact.js', array('jquery'), '1.0.0', true);
+// Affichage des images miniature (script JQuery)
+wp_enqueue_script('AffichageMiniatureJS', get_stylesheet_directory_uri() . '/assets/js/AffichageMiniature.js', array('jquery'), '1.0.0', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'script_JS_Custo' );
