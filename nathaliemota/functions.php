@@ -23,7 +23,10 @@ function script_JS_Custo() {
     wp_enqueue_script('ModaleJS', get_stylesheet_directory_uri() . '/assets/js/modalePopupContact.js', array('jquery'), '1.0.0', true);
 // Affichage des images miniature (script JQuery)
 wp_enqueue_script('AffichageMiniatureJS', get_stylesheet_directory_uri() . '/assets/js/AffichageMiniature.js', array('jquery'), '1.0.0', true);
-
+// Chargement de plus d'images avec Ajax (script JQuery)
+wp_enqueue_script('Ajax-charge-plus-images', get_stylesheet_directory_uri() . '/assets/js/Ajax-charge-plus-images.js', array('jquery'), '1.0.0', true);
+// Gestion de la LightBox (script JQuery)
+wp_enqueue_script('LightBoxJS', get_stylesheet_directory_uri() . '/assets/js/LightBox.js', array('jquery'), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'script_JS_Custo' );
 
